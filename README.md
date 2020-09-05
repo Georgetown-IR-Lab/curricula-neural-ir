@@ -17,9 +17,9 @@ Relevant configuration:
 
 `trainer=pointwise`: Use pointwise training *without* curriculum learning
 
-`trainer=pairwise_cl`: Use pairwise training with curriculum learning
+`trainer=pairwise-cl`: Use pairwise training with curriculum learning
 
-`trainer=pointwise_cl`: Use pointwise training with curriculum learning
+`trainer=pointwise-cl`: Use pointwise training with curriculum learning
 
 `trainer.curriculum=reciprank`: Use the Reciprocal rank heuristic
 
@@ -27,11 +27,11 @@ Relevant configuration:
 
 `trainer.curriculum=kdescore`: Use the Kernel Density Estimation (KDE) heuristic
 
-`trainer.eoc_epoch=20`: Sets the End of curriculum iteration ($m$)
+`trainer.eoc_epoch=20`: Sets the End of curriculum iteration ($m$) (default 20)
 
 **Dataset**
 
-`config/msmarco/judgedtrec2019`: Train and validated on MS-MARCO, test on TREC DL 2019
+`config/msmarco config/msmarco/judgedtrec2019`: Train and validated on MS-MARCO, test on TREC DL 2019
 
 `config/car`: Train, validate, and test on TREC CAR
 
